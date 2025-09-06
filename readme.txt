@@ -14,3 +14,16 @@ branching | merging can be done easily because all these are done in local machi
 Initialise an empty Git repository
 >> git init
 
+configure your name and email for your history of commits
+>> git config --global user.name "revanth palla"
+>> git config --global user.email "<>@gmail.com"
+
+to check what is configured user , email
+>> git config --list
+
+add change to staging area
+>> git add . 
+>> git add <specific_file_name>
+
+check the status of change on what state it is present
+>> git status
