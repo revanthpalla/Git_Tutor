@@ -36,3 +36,9 @@ list of commits
 
 to unstage a staged file
 >> git restore --staged <files>
+
+to rename a commit last commit message
+>> git commit --amend -m "<message>"
+
+to modify a specific commit message
+>> git rebase -i HEAD~N
