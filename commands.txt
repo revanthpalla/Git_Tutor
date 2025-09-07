@@ -42,3 +42,23 @@ to rename a commit last commit message
 
 to modify a specific commit message
 >> git rebase -i HEAD~N
+
+doing multiple commits keep the commit message same
+>> git commit --amend --no-edit
+
+Undoing of commits
+    (head)
+A-B-C
+
+suppose you want to destroy commit C, throw away uncommited changes
+>> git reset --hard HEAD~1
+  (head)
+A-B
+
+suppose you want to undo commit and keep up the changes, because not all changes are wrong
+>> git reset HEAD~1
+    (head)
+A-  B     -C
+
+suppose you want to undo commit but leave your files and index at last commit 
+>> git reset --soft HEAD~1 
