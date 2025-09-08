@@ -135,6 +135,22 @@ to push local to remote if same branch in remote deosnt exist it will create
 next time onwards we can directly do git pull or git push
 
 Fetch vs Pull
+
+Fetch - command downloads commits, files, and refs from a remote repository into your local repository
+It does not merge the changes into your current working branch.
+
+>> git fetch origin main
+
+inspect fetched changes
+>> git log origin/main
+
+Pull - command is used in Git to fetch and download content from a remote repository and 
+immediately update the local repository to match that content.
+
+>> git pull origin main (pulling from remote repo origin and main br)
+
+>> git pull (if remote br and local branch are in sync directly do this)
+
 working_dir         staging          local_repo              remote_repo
 
                                        <----- git fetch --------|
@@ -144,3 +160,19 @@ working_dir         staging          local_repo              remote_repo
    <---------------------- git pull ----------------------------|
 
 >> git pull = git fetch + git merge
+
+>> git fetch
+
+--o--o--o--O--O (origin/master updated)
+         \
+          x--x (master)
+
+>> git rebase origin/master  | git pull
+
+--o--o--o--O--O (origin/master updated)
+               \
+                x'--x' (master rebased)
+
+>> git push
+
+--o--o--o--O--O--x'--x' (origin/master, master)
