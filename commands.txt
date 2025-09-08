@@ -176,3 +176,8 @@ working_dir         staging          local_repo              remote_repo
 >> git push
 
 --o--o--o--O--O--x'--x' (origin/master, master)
+
+Git tags
+>> git tag <tag_name>  (create a tag)
+>> git push origin <tag_name>  (push a tag to remote repo)
+>> git tag -d <tag_name> (delete a local tag)
