@@ -109,5 +109,18 @@ to view merge conflicts better
 difference validating
 when same files | same line of code has been changes both branches
 when you try to merge one branch to other we get merge conflicts
-
 Rebasing
+suppose 
+
+                  - <-- c5 <-- c6  (develop)
+                 |
+c1 <-- c2 <-- c3 | <-- c4 (main)
+
+>> git checkout develop (reverse way to merge)
+>> git rebase main
+
+c1 <-- c2 <-- c3 <-- c4 <-- c5 <-- c6
+					 |              |
+                    (main)         (develop)
+
+>> git merge develop (performs fast farward merge)
