@@ -103,6 +103,9 @@ checkout to main
 >> git pull main (optional update main to latest changes always recommended)
 >> git merge develop
 
-differences testing
+to view merge conflicts better
+>> git config merge.conflictstyle diff3
+
+difference validating
 when same files | same line of code has been changes both branches
 when you try to merge one branch to other we get merge conflicts
