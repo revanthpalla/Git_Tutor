@@ -133,3 +133,14 @@ to push local to remote if same branch in remote deosnt exist it will create
 >> git push -u origin main
 
 next time onwards we can directly do git pull or git push
+
+Fetch vs Pull
+working_dir         staging          local_repo              remote_repo
+
+                                       <----- git fetch --------|
+
+   <--------- git merge ---------------|
+
+   <---------------------- git pull ----------------------------|
+
+>> git pull = git fetch + git merge
