@@ -61,4 +61,14 @@ suppose you want to undo commit and keep up the changes, because not all changes
 A-  B     -C
 
 suppose you want to undo commit but leave your files and index at last commit 
->> git reset --soft HEAD~1 
+>> git reset --soft HEAD~1
+
+The difference between soft reset and commit --amend is is used to modify the most recent commit, 
+it does so by creating a new commit that replaces the old one. This new commit will have a different commit ID (SHA1 checksum) than the original, 
+even if only the commit message was changed.
+
+to view current changes in working directory
+>> git diff
+
+to view changes between specific commits
+>> git diff commit_id1 commit_id2
