@@ -109,3 +109,5 @@ to view merge conflicts better
 difference validating
 when same files | same line of code has been changes both branches
 when you try to merge one branch to other we get merge conflicts
+
+Rebasing
