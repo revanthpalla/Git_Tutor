@@ -99,4 +99,9 @@ in order to merge develop branch to main branch
 
 checkout to main
 >> git checkout main
->> git merge develop 
+>> git pull main (optional update main to latest changes always recommended)
+>> git merge develop
+
+Merge conflicts (develop branch)
+when same files | same line of code has been changes both branches
+when you try to merge one branch to other we get merge conflicts
