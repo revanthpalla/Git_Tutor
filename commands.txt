@@ -124,3 +124,12 @@ c1 <-- c2 <-- c3 <-- c4 <-- c5 <-- c6
                     (main)         (develop)
 
 >> git merge develop (performs fast farward merge)
+
+to push changes to remote server
+we need to add origin
+>> git remote add origin https://github.com/revanthpalla/Git_Tutor.git
+
+to push local to remote if same branch in remote deosnt exist it will create
+>> git push -u origin main
+
+next time onwards we can directly do git pull or git push
