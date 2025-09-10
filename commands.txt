@@ -169,13 +169,13 @@ working_dir         staging          local_repo              remote_repo
 
 --o--o--o--O--O (origin/master updated)
          \
-          x--x (master)
+          x--x (*master)
 
 >> git rebase origin/master  | git pull
 
 --o--o--o--O--O (origin/master updated)
                \
-                x'--x' (master rebased)
+                x'--x' (*master rebased)
 
 >> git push
 
