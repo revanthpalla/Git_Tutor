@@ -161,7 +161,11 @@ working_dir         staging          local_repo              remote_repo
 
 >> git pull = git fetch + git merge
 
->> git fetch
+--o--o--o (origin/master)
+          \
+           x--x (*master: my local commits)
+
+>> git fetch origin master
 
 --o--o--o--O--O (origin/master updated)
          \
